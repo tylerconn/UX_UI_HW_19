@@ -1,0 +1,227 @@
+html {
+    scroll-behavior: smooth;
+}
+body {
+    background-color: #F1F1F1;
+    font-family: 'Open Sans', sans-serif;
+    color: #3B4043;
+    margin: auto;
+}
+/* header*/
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background-color: #F1F1F1;
+}
+div.logo {
+    padding: 18px 42px;
+    align-items: center;
+    height: 36px;
+}
+nav.topNav {
+    padding: 16px 34px;
+}
+li.topNav {
+    display: inline-flex;
+    flex-direction: row;
+    padding: 8px;
+    margin: 0 8px;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 600;
+}
+ul {
+    margin: auto;
+}
+/* hero section */
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 48px;
+}
+.hero {
+    font-size: 36px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:  flex-start;
+    padding: 32px 150px;
+}
+.hero p {
+    margin: 30px 0 0 0;
+}
+#profile {
+    margin: 50px auto;
+}
+/* skills */
+.mySkills {
+    margin-top: 48px;
+} 
+.skillCardSection {
+    margin-top: 48px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 48px;
+    gap: 48px;
+}
+div.skillContainer {
+    background-color: #D1DCE0;
+    padding: 40px;
+    border-radius: 20px;
+    width: auto;
+}
+h3.skillClass {
+    text-align: center;
+    margin-bottom: 24px;
+}
+li {
+    font-size: 18px;
+    margin-top: 8px;
+}
+/* past projects section */
+h1 {
+    font-size: 48px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: auto;
+}
+.caseStudy {
+    display: flex;
+    flex-direction: row;
+    margin: 48px 0 0 0;
+    padding: 60px;
+    background-color: #D1DCE0;
+    border-radius: 20px;
+    justify-content: space-between;
+}
+.mockup {
+    width: 48%;
+    display: block;
+    position: relative;
+
+}
+.laptopImg {
+    max-width: 100%;
+    max-height: 100%;
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+h3 {
+    font-size: 24px;
+    font-weight: 600;
+    margin: 0;
+
+}
+.caseDesc {
+    font-size: 18px;
+    width: 48%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+button {
+    color: white;
+    background: #1F4E5F;
+    border-radius: 10px;
+    padding: 8px 16px;
+    font-size: 18px;
+    font-weight: 600;
+    border: none;
+    width: fit-content;
+}
+p.desc {
+    margin: 32px 0;
+}
+/* footer section*/
+footer {
+    background-color: #1F4E5F;
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.foot {
+    margin: auto;
+    text-decoration: none;
+}
+ul.foot {
+    display: inline-flex;
+    padding-inline-start: 0;
+    list-style-type: none;
+}
+li.foot {
+    padding: 0 20px 20px 20px;
+    font-size: 14px;
+}
+
+/* Responsive Design */
+
+@media screen and (max-width: 1000px) {
+    header {
+        padding: 8px 16px;
+    }
+    li.topNav {
+        margin: 0;
+    }
+    .hero {
+        padding: 32px 90px;
+    }
+    .content {
+        margin: 48px 24px;
+    }
+    .skillCardSection {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-gap: 24px;
+        gap: 24px;
+
+    }
+    div.skillContainer {
+        background-color: #D1DCE0;
+        padding: 24px;
+        border-radius: 20px;
+        width: auto;
+    }
+    .caseStudy {
+        padding: 30px;
+    }
+    p.desc {
+        margin: 20px 0;
+    }
+}    
+
+@media screen and (max-width: 700px) {
+    .hero {
+        padding: 16px 60px;
+    }
+    .caseStudy {
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    .mockup {
+        width: 100%;
+        height: 40%;
+        margin-bottom: 20px;
+  
+    }
+    .laptopImg {
+        max-width: 100%;
+        max-height: 100%;
+        margin: auto;
+        position: relative;
+        transform: none;
+    }
+    .caseDesc {
+        width: 100%;
+    
+    }
+}
