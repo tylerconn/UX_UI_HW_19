@@ -38,6 +38,13 @@ li.topNav {
 ul {
     margin: auto;
 }
+a {
+    text-decoration: none;
+    color: inherit;
+}
+a:active {
+    color: inherit;
+}
 /* hero section */
 .content {
     display: flex;
