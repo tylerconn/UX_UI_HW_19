@@ -1,12 +1,12 @@
-html {
+/* html {
     scroll-behavior: smooth;
-}
+}*/
 body {
     background-color: #F1F1F1;
     font-family: 'Open Sans', sans-serif;
     color: #3B4043;
     margin: auto;
-}
+} 
 /* header*/
 header {
     display: flex;
